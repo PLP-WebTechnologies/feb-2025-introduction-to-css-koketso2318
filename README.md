@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,13 +11,13 @@
             background-color: #f9f9f9;
             margin: 0;
             padding: 0;
-            text-align: center;
         }
 
         header {
             background-color: #005baa;
             color: white;
             padding: 30px 10px;
+            text-align: center;
         }
 
         .styled-image {
@@ -24,6 +26,7 @@
             margin: 30px auto;
             border-radius: 10px;
             border: 4px solid #005baa;
+            display: block;
         }
 
         .content-box {
@@ -34,33 +37,45 @@
             width: 90%;
             max-width: 700px;
             box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            text-align: center;
         }
 
         footer {
             background-color: #003f7d;
             color: white;
             padding: 15px;
+            text-align: center;
             margin-top: 40px;
+        }
+
+        /* Additional layout properties */
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
         }
     </style>
 </head>
 <body>
 
-    <header>
-        <h1>SuperStyle</h1>
-        <p>Make Your Website Stand Out</p>
-    </header>
+    <div class="container">
+        <header>
+            <h1>SuperStyle</h1>
+            <p>Make Your Website Stand Out</p>
+        </header>
 
-    <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1600&q=80"
-         alt="Design Image" class="styled-image">
+        <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1600&q=80"
+             alt="Design Image" class="styled-image">
 
-    <div class="content-box">
-        <p>Bring your site to life with modern CSS styling. No experience needed — just plug and play.</p>
+        <div class="content-box">
+            <p>Bring your site to life with modern CSS styling. No experience needed — just plug and play.</p>
+        </div>
+
+        <footer>
+            &copy; 2025 SuperStyle
+        </footer>
     </div>
-
-    <footer>
-        &copy; 2025 SuperStyle
-    </footer>
 
 </body>
 </html>
