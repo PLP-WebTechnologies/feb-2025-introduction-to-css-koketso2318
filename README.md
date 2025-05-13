@@ -1,29 +1,66 @@
-# Introduction to CSS
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SuperStyle Advertisement</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
 
-## Objectives
-Link an external CSS file to an HTML document.
-Apply basic styling using selectors.
-Use colors, fonts, and spacing effectively.
+        header {
+            background-color: #005baa;
+            color: white;
+            padding: 30px 10px;
+        }
 
-## Instructions
+        .styled-image {
+            width: 90%;
+            max-width: 600px;
+            margin: 30px auto;
+            border-radius: 10px;
+            border: 4px solid #005baa;
+        }
 
-Create a style.css file.
-Apply CSS to a HTML page.
-Style elements using:
-Classes and IDs.
-Color and typography.
-Margins, paddings, and borders.
+        .content-box {
+            background-color: white;
+            border: 1px solid #ccc;
+            padding: 20px;
+            margin: 30px auto;
+            width: 90%;
+            max-width: 700px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
 
->[!NOTE]
->  - Include at least:
->  - Use of 3 selectors
->  - Style an image
->  - Margin, Padding & Borders
->  - Different font
+        footer {
+            background-color: #003f7d;
+            color: white;
+            padding: 15px;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
 
-# Tasks
- - Link an external CSS file.
- - Apply at least 3 different selectors.
- - Improve readability and aesthetics.
+    <header>
+        <h1>SuperStyle</h1>
+        <p>Make Your Website Stand Out</p>
+    </header>
 
-Happy Coding! 💻✨
+    <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1600&q=80"
+         alt="Design Image" class="styled-image">
+
+    <div class="content-box">
+        <p>Bring your site to life with modern CSS styling. No experience needed — just plug and play.</p>
+    </div>
+
+    <footer>
+        &copy; 2025 SuperStyle
+    </footer>
+
+</body>
+</html>
